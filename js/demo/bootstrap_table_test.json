@@ -1,15 +1,6 @@
 
 [
     {
-        "id": "id",
-        "name": "名称",
-        "price": "价格",
-        "column1": "c10",
-        "column2": "c20",
-        "column3": "c30",
-        "column4": "c40"
-    },
-    {
         "id": 0,
         "name": "测试0",
         "price": "&yen;0",

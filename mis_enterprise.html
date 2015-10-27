@@ -32,18 +32,20 @@
                 </div>
             </div>
             <div id="tab-4" class="tab-pane" >
-                角色权限管理
-
-                 <table id="exampleTablePagination" data-toggle="table" data-url="js/demo/bootstrap_table_test.json" data-query-params="queryParams" height="400" data-mobile-responsive="false"  data-pagination="true" data-icon-size="outline" data-search="true">
+                <div class="col-sm-12">
+                 <table id="exampleTablePagination" data-toggle="table" data-url="js/demo/mis_roleAuth.json" data-query-params="queryParams" width="80%" height="auto" data-mobile-responsive="false"  data-pagination="true" data-icon-size="outline" data-search="true">
                                     <thead>
                                         <tr>
                                             <th data-field="state" data-checkbox="true"></th>
-                                            <th data-field="id">ID</th>
-                                            <th data-field="name">名称</th>
-                                            <th data-field="price">价格</th>
+                                            <th data-field="roleName">角色名称</th>
+                                            <th data-field="roleInfo">角色介绍</th>
+                                            <th data-field="roleMems">角色成员</th>
+                                            <th data-field="roleOp">操作</th>
                                         </tr>
                                     </thead>
-                                </table>
+                                </table>                    
+                </div>
+
             </div>
         </div>
     </div>    

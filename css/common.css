@@ -1,0 +1,200 @@
+/**
+ * 颜色记录
+ * 导航菜单 下划线 #28ACE6
+ * 导航tab  弹出框表头菜单#009DE2 009DE2
+ * 表格中设置/编辑 等按钮 字体 #3180B8
+ * 
+ */
+
+/**********基本通用类1************/
+
+/*格式化样式*/
+/*body { margin: 20px; }*/
+ul li { list-style: none; }
+ul { padding: 0px; }
+a, a:hover { color: #000; text-decoration: none; }
+.none{display: none;}
+table th,td{text-align: center;}
+button,input{outline: none;}
+
+/*定位样式*/
+.tl{text-align: left;}
+.tc{text-align: center;}
+.tr{text-align: right;}
+.fr{float: right;}
+.fl{float: left;}
+
+/*常用颜色样式*/
+.cr{
+    color:red;
+}
+
+/*元素定制样式*/
+.btn-idle{
+    color:#fff;
+    background-color: #999;
+    border-color:#999;
+}
+.btn-idle:hover{
+    color:#fff;
+
+}
+.short-input{
+    display: inline-block;
+    width: 60px;
+}
+
+/*bootstrap定制样式*/
+/*.nav-tabs{
+    border-bottom:1px solid #28ACE6;
+    font-weight: bold;
+}
+.nav-tabs>li{
+
+}
+.nav-tabs>li>a{
+    color:#fff;
+}
+.nav-tabs>li.active>a{
+    font-color:#000;
+}
+.nav-tabs>li>a:hover{
+    border-color: transparent;
+}
+.nav-tabs > li.active > a{
+    border:1px solid #28ACE6;
+    border-bottom-color: transparent;
+    background-color: #fff;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+    border:1px solid #28ACE6;
+    border-bottom-color: transparent;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #009DE2;
+}
+.nav > li > a{
+    background-color: #009DE2;
+}*/
+.modal-content{
+    border-radius: 0px;
+}
+.modal-content .modal-header{
+    text-align: center;
+    color:#fff;
+    background-color: #009DE2;
+}
+.modal{
+    overflow: auto;
+    overflow-y:scroll;
+}
+
+
+
+
+
+/*.nav-tabs{
+    border-bottom:1px solid #009DE2;
+}
+.nav-tabs>li>a:hover{
+    border-color: #009DE2;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: #fff;
+}
+.modal-header{
+    
+}*/
+
+/**
+ * 菜单栏 tab样式
+ */
+
+
+/*table表格样式*/
+table tr:first-child{
+    /*background: #ccc;*/
+    font-weight: bold;
+}
+table tr:nth-child(2){
+    /*background: #E6E6E6;*/
+}
+td.td-ckb{
+    width:50px;
+}
+
+
+/*其他*/
+.setting label{
+    color:#2980BB;
+    cursor: pointer;
+    display: inline;
+}
+
+#headerTab{
+    height:30px;
+    border-bottom: 1px solid #3F9CC5;
+    margin:20px;
+}
+#headerTab li{
+    height:30px;
+    line-height: 30px;
+    float:left;
+    margin-right:15px;
+    /*background: #009DE2;*/
+    padding:0 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+#headerTab li:first-child{
+    margin-left:0px;
+}
+#headerTab li:hover{
+    cursor: pointer;
+}
+.normalTab{
+    background: #009DE2;
+    color:#fff;
+}
+.activeTab{
+    background: #fff;
+    color:#000;
+    border:1px solid #5AAED3;
+    border-bottom: 0px;
+    font-weight: bold;
+}
+
+
+.formPopUp{
+    text-align: center;
+}
+.formPopUp table{
+    margin:auto;
+}
+.formPopUp tr td:first-child{
+    text-align: right;
+}
+.formPopUp table td{
+    font-weight: normal;
+    padding:5px;
+    font-weight: normal;
+}
+
+.formPopUp .confirmButtons{
+    margin-top:20px;
+}
+
+
+
+.op{
+    color:#2980BB;
+    cursor: pointer;
+    display: inline;
+}
+.op-ul{
+    color:#2980BB;
+    cursor: pointer;
+    display: inline;
+    text-decoration: underline;
+}
