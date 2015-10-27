@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台主题UI框架-部门维护</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+    <link rel="shortcut icon" href="../Hplus-v.4.0.0gai/favicon.ico">
+    <link href="css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.0.0" rel="stylesheet"><base target="_blank">
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeIn">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel blank-panel">
+
+                    <div class="panel-heading">
+                        <div class="panel-options">
+
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="../Hplus-v.4.0.0gai/tabs_panels.html#tab-4">部门维护</a>
+                                </li>
+                                <li class=""><a data-toggle="tab" href="../Hplus-v.4.0.0gai/tabs_panels.html#tab-5">岗位维护</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="tab-content">
+                            <div id="tab-4" class="tab-pane active">
+                                
+                                <div class="wrapper wrapper-content animated fadeInRight">
+                                  <!-- Panel Other -->
+                                  <div class="ibox float-e-margins">
+                                      <div class="ibox-content">
+                                          <div class="row row-lg">
+                                              <div class="col-sm-12">
+                                                  <!-- Example Pagination -->
+                                                  <div class="example-wrap">
+                                                      <div class="example">
+                                                          <table id="exampleTablePagination" data-toggle="table" data-url="js/demo/bootstrap_table_test.json" data-query-params="queryParams" data-mobile-responsive="true" 
+                                                           data-pagination="true" data-icon-size="outline" data-search="true">
+                                                              <thead>
+                                                                  <tr>
+                                                                      <th data-field="state" data-checkbox="true"></th>
+                                                                      <th data-field="id">ID</th>
+                                                                      <th data-field="name">名称</th>
+                                                                      <th data-field="price">价格</th>
+                                                                  </tr>
+                                                              </thead>
+                                                          </table>
+                                                      </div>
+                                                  </div>
+                                                  <!-- End Example Pagination -->
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- End Panel Other -->
+                               </div>
+                            </div>
+
+                            <div id="tab-5" class="tab-pane">
+                                <strong>Normalize.css</strong>
+
+                                <p>为了增强跨浏览器表现的一致性，我们使用了 Normalize.css，这是由 Nicolas Gallagher 和 Jonathan Neal 维护的一个CSS 重置样式库。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.5"></script>
+
+
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+
+
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
+    <!--统计代码，可删除-->
+    
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.5"></script>
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+
+    <!-- Bootstrap table -->
+    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+
+    <!-- Peity -->
+    <script src="js/demo/bootstrap-table-demo.js"></script>
+    <script type="text/javascript">
+    // 参数配置
+       $('#exampleTablePagination').bootstrapTable({
+      url: "js/demo/bootstrap_table_test.json",
+      search: false,
+      pagination: true,
+      showRefresh: false,
+      showToggle: false,
+      showColumns: false,
+      iconSize: 'outline',
+      toolbar: '#exampleTableEventsToolbar',
+      icons: {
+        refresh: 'glyphicon-repeat',
+        toggle: 'glyphicon-list-alt',
+        columns: 'glyphicon-list'
+      }
+    });
+    </script>
+
+
+</body>
+
+</html>
