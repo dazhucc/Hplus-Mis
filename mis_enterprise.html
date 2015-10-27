@@ -3,8 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <title>mis_企业架构</title>
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+     <link href="css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <link href="css/style.css?v=4.0.0" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="tabs-container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">企业组织图</a>
+            </li>
+            <li class="" data-toggle="modal" data-target="#addManagerPopUp"><a   aria-expanded="false">添加管理单位</a>
+            </li>
+            <li class="" data-toggle="modal" data-backdrop="static" data-target="#addUserPopUp"><a  aria-expanded="false">添加使用者</a>
+            </li>
+            <li class=""><a data-toggle="tab" href="#tab-4" aria-expanded="false">角色权限管理</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="tab-1" class="tab-pane active">
+                <div class="panel-body">
+                    
+            
+                </div>
+            </div>
+            <div id="tab-4" class="tab-pane" >
+                角色权限管理
+
+                 <table id="exampleTablePagination" data-toggle="table" data-url="js/demo/bootstrap_table_test.json" data-query-params="queryParams" height="400" data-mobile-responsive="false"  data-pagination="true" data-icon-size="outline" data-search="true">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="state" data-checkbox="true"></th>
+                                            <th data-field="id">ID</th>
+                                            <th data-field="name">名称</th>
+                                            <th data-field="price">价格</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+            </div>
+        </div>
+    </div>    
+    <div class="modal fade" id="addManagerPopUp">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        添加管理单位
+                    </div>
+                    <div class="modal-body">
+                        <form class="formPopUp">
+                            <table>
+                                <tr>
+                                    <td class="tr"><span class="cr">* </span>单位名称：</td>
+                                    <td><input type="text"  class="form-control" placeholder="单位名称不能重复"></td>
+                                </tr>
+                                <tr>
+                                    <td class="tr">
+                                        <span class="cr">* </span>所在单位：
+                                    </td>
+                                    <td>
+                                        <select class="form-control" id="managerName">
+                                            <option>请选择</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tr">
+                                        <span class="cr">* </span>备注：
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="confirmButtons">
+                                <button type="submit" class="btn btn-primary" data-dismiss="modal">确定</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                        </form>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="modal fade" id="addUserPopUp">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        添加使用者
+                    </div>
+                    <div class="modal-body">
+                        <form class="formPopUp">
+                        <table>
+                            <tr>
+                                <td>
+                                    <span class="cr">* </span>使用人名称：
+                                </td>
+                                <td>
+                                    <select class="form-control" id="managerName">
+                                            <option>请选择</option>
+                                        </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="cr">* </span>登录账号：
+                                </td>
+                                <td>
+                                    <input type="text"  class="form-control">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="cr">* </span>登录密码：
+                                </td>
+                                <td>
+                                    <input type="text"  class="form-control" placeholder="密码/字母开头">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="cr">* </span>角色权限：
+                                </td>
+                                <td>
+                                    <select class="form-control" id="managerName">
+                                            <option>请选择</option>
+                                        </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="cr">* </span>所在门店：
+                                </td>
+                                <td>
+                                    <select class="form-control" id="managerName">
+                                            <option>请选择</option>
+                                        </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>备注：</td>
+                                <td>
+                                    <input type="text"  class="form-control">
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="confirmButtons">
+                                <button type="submit" class="btn btn-primary" data-dismiss="modal">确定</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.5"></script>
+
+
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+     <!-- Nestable List -->
+    <script src="js/plugins/nestable/jquery.nestable.js"></script>
+
+       <!-- Bootstrap table -->
+    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+
+    <!-- Peity -->
+    <script src="js/demo/bootstrap-table-demo.js"></script>
+
+
+
+
 </body>
 </html>    
